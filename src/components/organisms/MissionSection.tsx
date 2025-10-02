@@ -88,7 +88,7 @@ export const MissionSection: React.FC = () => {
               OmniaSky operates at the intersection of intelligence, networks,
               and distributed systems. Our portfolio companies aren&apos;t just
               building products—they&apos;re establishing protocols. Transaction
-              rails for AI agents. Neural architectures for specialized tasks.
+              rails for intelligence living. Neural architectures for specialized tasks.
               Compute infrastructure that scales beyond human-operated limits.
             </p>
 
