@@ -1,6 +1,5 @@
 import React from 'react'
 import { Logo } from '@/components/atoms/Logo'
-import { Button } from '@/components/ui/button'
 
 export const Header: React.FC = () => {
   return (

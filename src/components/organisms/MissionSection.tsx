@@ -79,15 +79,15 @@ export const MissionSection: React.FC = () => {
           <div className="space-y-8 text-lg md:text-xl text-gray-300 leading-relaxed">
             <p>
               We believe the future belongs to those who build infrastructure
-              before it's needed. While others optimize for today, we architect
+              before it&apos;s needed. While others optimize for today, we architect
               systems for tomorrow—creating the foundational layers that enable
               the next generation of autonomous operations.
             </p>
 
             <p>
               OmniaSky operates at the intersection of intelligence, networks,
-              and distributed systems. Our portfolio companies aren't just
-              building products—they're establishing protocols. Transaction
+              and distributed systems. Our portfolio companies aren&apos;t just
+              building products—they&apos;re establishing protocols. Transaction
               rails for AI agents. Neural architectures for specialized tasks.
               Compute infrastructure that scales beyond human-operated limits.
             </p>
@@ -100,7 +100,7 @@ export const MissionSection: React.FC = () => {
             </p>
 
             <p>
-              The systems we're building today will underpin economies we can
+              The systems we&apos;re building today will underpin economies we can
               barely imagine. Machine-to-machine commerce at planetary scale.
               Intelligence that augments human capability across every domain.
               Infrastructure so reliable it becomes invisible.
@@ -109,13 +109,13 @@ export const MissionSection: React.FC = () => {
             <p>
               This is our commitment: to back the ambitious, fund the
               improbable, and build the fundamental infrastructure that makes
-              the future possible. Not incremental improvements to yesterday's
-              solutions, but foundational systems for tomorrow's challenges.
+              the future possible. Not incremental improvements to yesterday&apos;s
+              solutions, but foundational systems for tomorrow&apos;s challenges.
             </p>
 
             <div className="pt-8 border-t border-cyan-400/50">
               <p className="text-2xl font-semibold text-white drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
-                We're building infrastructure for a world where intelligence,
+                We&apos;re building infrastructure for a world where intelligence,
                 transactions, and computation happen at machine speed—because
                 that world is already here.
               </p>
