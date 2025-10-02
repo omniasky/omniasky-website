@@ -94,9 +94,9 @@ export const MissionSection: React.FC = () => {
 
             <p className="text-cyan-400 font-medium border-l-2 border-cyan-400 pl-6">
               Each company operates independently, led by visionaries who
-              understand their domains deeply. We provide capital, strategy, and
-              the freedom to pursue ambitious technical challenges that
-              traditional structures would reject as impractical.
+              understand their domains deeply. Grounded in rigorous technology research,
+              we provide capital, strategy, and the freedom to pursue ambitious
+              technical challenges that traditional structures would reject as impractical.
             </p>
 
             <p>
