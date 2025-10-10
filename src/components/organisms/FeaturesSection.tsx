@@ -7,7 +7,7 @@ export const FeaturesSection: React.FC = () => {
     {
       title: "Paymonei",
       description:
-        "Global transaction infrastructure enabling autonomous agent payments, merchant settlements, and enterprise operations.",
+        "Enterprise API infrastructure for payment processing integration and autonomous system connectivity.",
       icon: CreditCard,
       badge: "Networks",
       url: "https://paymonei.com",
@@ -33,7 +33,10 @@ export const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-24 bg-gradient-to-b from-background via-muted/30 to-background">
+    <section
+      id="features"
+      className="py-24 bg-gradient-to-b from-background via-muted/30 to-background"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -41,7 +44,8 @@ export const FeaturesSection: React.FC = () => {
             <span className="text-primary"> Companies</span>
           </h2>
           <p className="text-xl text-muted-foreground text-balance">
-            Building the foundational protocols and infrastructure that will power autonomous systems at global scale.
+            Building the foundational protocols and infrastructure that will
+            power autonomous systems at global scale.
           </p>
         </div>
 
