@@ -15,7 +15,7 @@ export const FeaturesSection: React.FC = () => {
     {
       title: "Hugogen",
       description:
-        "Ultra augmented intelligence systems delivering domain-expertise AI for general tasks, finance, threat detection and emotion feedbacks.",
+        "Delivering ultra-augmented intelligence across autonomous vehicles, robotics, finance, EV battery optimization, threat detection, and emotion recognition.",
       icon: Brain,
       badge: "Brain AI",
       badgeVariant: "secondary" as const,
