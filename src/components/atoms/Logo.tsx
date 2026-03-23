@@ -12,20 +12,20 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   return (
     <div className={cn(
-      "flex items-center space-x-2",
+      "flex items-center space-x-3",
       className
     )}>
       <div className={cn(
-        "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-lg",
+        "w-8 h-8 rounded flex items-center justify-center font-bold text-lg",
         variant === 'white' 
-          ? "bg-white text-primary" 
-          : "bg-primary text-white"
+          ? "bg-white text-black" 
+          : "bg-black text-white border border-zinc-800"
       )}>
         O
       </div>
       <span className={cn(
-        "text-xl font-bold",
-        variant === 'white' ? "text-white" : "text-foreground"
+        "text-xl font-bold tracking-tight",
+        variant === 'white' ? "text-white" : "text-zinc-900"
       )}>
         OmniaSky
       </span>

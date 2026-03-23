@@ -1,7 +1,5 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { AnimatedIcon } from '@/components/atoms/AnimatedIcon'
 import { LucideIcon } from 'lucide-react'
 
 interface FeatureCardProps {
@@ -9,7 +7,6 @@ interface FeatureCardProps {
   description: string
   icon: LucideIcon
   badge?: string
-  badgeVariant?: 'default' | 'secondary' | 'destructive' | 'outline'
   url?: string
 }
 
@@ -18,61 +15,55 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   icon: Icon,
   badge,
-  badgeVariant = 'secondary',
   url
 }) => {
   return (
-    <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 border-border/50 hover:border-primary/50 bg-card/50 backdrop-blur-sm h-full flex flex-col">
-      {/* Gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-      <CardHeader className="relative z-10 pb-4">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex-shrink-0">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all"></div>
-              <AnimatedIcon className="relative w-14 h-14 p-3.5 bg-gradient-to-br from-primary/10 to-primary/20 text-primary rounded-xl group-hover:from-primary/20 group-hover:to-primary/30 transition-all">
-                <Icon className="w-7 h-7" />
-              </AnimatedIcon>
-            </div>
+    <div className="group relative w-full h-full bg-white border border-zinc-200 transition-colors duration-300 hover:border-zinc-400">
+      <div className="p-8 md:p-10 flex flex-col h-full">
+        
+        <div className="flex items-start justify-between mb-20">
+          <div className="p-3 bg-zinc-50 rounded select-none group-hover:bg-zinc-100 transition-colors">
+            <Icon className="w-6 h-6 text-zinc-900" strokeWidth={1.5} />
           </div>
+          
           {badge && (
-            <Badge variant={badgeVariant} className="text-xs font-medium">
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-zinc-500 bg-zinc-50 px-3 py-1 border border-zinc-100">
               {badge}
-            </Badge>
+            </span>
           )}
         </div>
-        <CardTitle className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-          {title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="relative z-10 pt-0 flex-1 flex flex-col">
-        <p className="text-muted-foreground text-sm leading-relaxed flex-1">
-          {description}
-        </p>
 
-        {url && (
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors mt-4 group/link"
-          >
-            Visit Website
-            <svg
-              className="ml-1 w-4 h-4 group-hover/link:translate-x-0.5 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        <div className="mt-auto">
+          <h3 className="text-2xl font-bold mb-4 text-zinc-900 tracking-tight transition-colors">
+            {title}
+          </h3>
+          
+          <p className="text-sm text-zinc-500 font-light leading-relaxed mb-10">
+            {description}
+          </p>
+
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 pt-6 border-t border-zinc-100 group/link w-full"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-        )}
-
-        {/* Bottom accent line */}
-        <div className="mt-6 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-primary/0 via-primary/50 to-primary/0 transition-all duration-500"></div>
-      </CardContent>
-    </Card>
+              <span className="text-[10px] font-bold tracking-widest uppercase text-zinc-900">
+                Explore 
+              </span>
+              <svg
+                className="ml-1 w-4 h-4 text-zinc-400 group-hover/link:text-zinc-900 group-hover/link:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   )
 }

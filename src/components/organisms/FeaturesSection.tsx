@@ -7,18 +7,17 @@ export const FeaturesSection: React.FC = () => {
     {
       title: "Paymonei",
       description:
-        "Enterprise API infrastructure for payment processing integration and autonomous system connectivity.",
+        "Enterprise API infrastructure specializing in automated invoicing, bill payments, and seamless financial connectivity for autonomous systems.",
       icon: CreditCard,
-      badge: "Networks",
+      badge: "Infrastructure",
       url: "https://paymonei.com",
     },
     {
       title: "Hugogen",
       description:
-        "Delivering ultra-augmented intelligence across autonomous vehicles, robotics, finance, EV battery optimization, threat detection, and emotion recognition.",
+        "Technology company developing foundational intelligence ecosystems across agent-driven commerce, design, productivity, and chat LLMs.",
       icon: Brain,
-      badge: "Brain AI",
-      badgeVariant: "secondary" as const,
+      badge: "Intelligence",
       url: "https://hugogen.com",
     },
     {
@@ -26,35 +25,29 @@ export const FeaturesSection: React.FC = () => {
       description:
         "Sky network infrastructure for machine-to-machine operations and intelligence workloads architecture for autonomous systems.",
       icon: Server,
-      badge: "Infrastructure",
-      badgeVariant: "outline" as const,
+      badge: "Networks",
       url: "https://zillionscale.com",
     },
   ];
 
   return (
-    <section
-      id="features"
-      className="py-24 bg-gradient-to-b from-background via-muted/30 to-background"
-    >
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Portfolio
-            <span className="text-primary"> Companies</span>
+    <section id="features" className="py-32 md:py-48 relative overflow-hidden bg-zinc-50">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 w-full">
+        <div className="max-w-4xl mb-24">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 tracking-tight text-zinc-900">
+            Portfolio Companies
           </h2>
-          <p className="text-xl text-muted-foreground text-balance">
-            Building the foundational protocols and infrastructure that will
-            power autonomous systems at global scale.
+          <p className="text-xl md:text-2xl text-zinc-500 font-light leading-relaxed">
+            Independent entities operating at the forefront of their respective domains, united by deep technical research and long-term vision.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
               className="animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               <FeatureCard {...feature} />
             </div>

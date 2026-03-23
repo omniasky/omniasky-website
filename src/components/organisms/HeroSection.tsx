@@ -1,19 +1,15 @@
 import React from "react";
-import { Badge } from "@/components/ui/badge";
-import { AnimatedIcon } from "@/components/atoms/AnimatedIcon";
-import { Bot, Zap } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative pt-20 pb-16 overflow-hidden">
-      {/* Video Background */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-50">
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20 mix-blend-multiply"
         >
           <source
             src="https://s3.ap-southeast-3.amazonaws.com/assets.omniasky.com/web/sky-intelligence.mp4"
@@ -21,42 +17,30 @@ export const HeroSection: React.FC = () => {
           />
         </video>
 
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/40"></div>
+        <div className="absolute inset-0 bg-white/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-50 via-white/30 to-zinc-50"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <Badge variant="secondary" className="mb-6">
-            <Zap className="w-3 h-3 mr-1" />
-            Technology Holding Company
-          </Badge>
-
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white animate-fade-in">
-            AI, Networks,
-            <span className="text-cyan-400"> Systems</span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto animate-slide-up text-balance">
-            Holding company with operations in artificial intelligence, transaction infrastructure, and distributed computing.
-          </p>
-
-          <div className="text-center mb-8">
-            <p className="text-sm text-gray-300 mb-4">
-              Managing globally across AI, networks, and infrastructure
-            </p>
+      <div className="container mx-auto px-6 relative z-10 pt-32 pb-24">
+        <div className="max-w-4xl">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-zinc-100 border border-zinc-200 text-xs font-semibold uppercase tracking-widest text-zinc-900 mb-12 animate-fade-in">
+            <span>OmniaSky Group</span>
           </div>
 
-          <div className="mt-16 text-center">
-            <AnimatedIcon animation="bounce">
-              <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto">
-                <Bot className="w-6 h-6 text-cyan-400" />
-              </div>
-            </AnimatedIcon>
-            <p className="text-sm text-gray-300 mt-2">
-              Innovating Across Multiple Verticals
-            </p>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 text-zinc-900 tracking-tighter leading-[1.1]">
+            Intelligence <br />
+            Infrastructure.
+          </h1>
+
+          <p className="text-xl md:text-2xl text-zinc-600 mb-12 max-w-2xl font-light tracking-wide animate-slide-up text-balance leading-relaxed">
+            Architecting the foundational layers of computation, transaction infrastructure, and artificial intelligence for global autonomous operations.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-baseline space-y-4 sm:space-y-0 sm:space-x-12 pt-12 border-t border-zinc-200 animate-slide-up">
+            <div className="flex flex-col">
+              <span className="text-4xl font-bold text-zinc-900 tracking-tight">03</span>
+              <span className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mt-2">Core Sectors</span>
+            </div>
           </div>
         </div>
       </div>

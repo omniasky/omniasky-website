@@ -3,33 +3,37 @@ import { Logo } from "@/components/atoms/Logo";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-black border-t border-cyan-400/20 overflow-hidden">
-      {/* Futuristic background */}
-      <div className="absolute inset-0">
-        {/* Base gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-black"></div>
-
-        {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#00d4ff15_1px,transparent_1px),linear-gradient(to_bottom,#00d4ff15_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-        </div>
-
-        {/* Top glow line */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60"></div>
-      </div>
-
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        {/* Centered logo and copyright */}
-        <div className="flex flex-col items-center justify-center space-y-8">
-          <Logo variant="white" className="opacity-90 hover:opacity-100 transition-opacity" />
-
-          {/* Copyright with futuristic styling */}
-          <div className="flex flex-col items-center space-y-2">
-            <div className="h-px w-32 bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent"></div>
-            <p className="text-sm text-gray-400 tracking-wider">
-              © {new Date().getFullYear()} <span className="text-white">Omniasky Technology Pte Ltd</span>
+    <footer className="relative bg-zinc-50 border-t border-zinc-200 pt-24 pb-12 overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-24">
+          <div className="md:col-span-2 space-y-6">
+            <Logo variant="default" className="opacity-90 hover:opacity-100 transition-opacity" />
+            <p className="text-sm font-light text-zinc-500 max-w-xs leading-relaxed">
+              Foundational infrastructure for global autonomous systems, intelligence models, and transaction networks.
             </p>
           </div>
+          
+          <div className="space-y-6">
+            <h3 className="text-xs font-semibold tracking-widest text-zinc-900 uppercase">Portfolio</h3>
+            <ul className="space-y-4 text-sm font-light text-zinc-500">
+              <li><a href="https://paymonei.com" className="hover:text-zinc-900 transition-colors">Paymonei</a></li>
+              <li><a href="https://hugogen.com" className="hover:text-zinc-900 transition-colors">Hugogen</a></li>
+              <li><a href="https://zillionscale.com" className="hover:text-zinc-900 transition-colors">ZillionScale</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-xs font-semibold tracking-widest text-zinc-900 uppercase">Operations</h3>
+            <ul className="space-y-4 text-sm font-light text-zinc-500">
+              <li><span className="cursor-not-allowed">Global Infrastructure</span></li>
+              <li><span className="cursor-not-allowed">Artificial Intelligence</span></li>
+              <li><span className="cursor-not-allowed">Networks</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 text-xs font-semibold tracking-widest text-zinc-400 uppercase">
+          <p>© {new Date().getFullYear()} OmniaSky Technology Pte Ltd</p>
         </div>
       </div>
     </footer>
