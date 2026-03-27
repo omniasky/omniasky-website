@@ -7,6 +7,7 @@ interface FeatureCardProps {
   description: string
   icon: LucideIcon
   badge?: string
+  statusBadge?: string
   url?: string
 }
 
@@ -15,6 +16,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   icon: Icon,
   badge,
+  statusBadge,
   url
 }) => {
   return (
@@ -34,9 +36,16 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         </div>
 
         <div className="mt-auto">
-          <h3 className="text-2xl font-bold mb-4 text-zinc-900 tracking-tight transition-colors">
-            {title}
-          </h3>
+          <div className="flex items-center space-x-3 mb-4">
+            <h3 className="text-2xl font-bold text-zinc-900 tracking-tight transition-colors">
+              {title}
+            </h3>
+            {statusBadge && (
+              <span className="text-[9px] font-semibold tracking-widest uppercase text-zinc-500 bg-zinc-50 px-2 py-1 border border-zinc-200 rounded-sm">
+                {statusBadge}
+              </span>
+            )}
+          </div>
           
           <p className="text-sm text-zinc-500 font-light leading-relaxed mb-10">
             {description}

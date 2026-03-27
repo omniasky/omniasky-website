@@ -5,14 +5,6 @@ import { CreditCard, Brain, Server } from "lucide-react";
 export const FeaturesSection: React.FC = () => {
   const features = [
     {
-      title: "Paymonei",
-      description:
-        "Enterprise API infrastructure specializing in automated invoicing, bill payments, and seamless financial connectivity for autonomous systems.",
-      icon: CreditCard,
-      badge: "Infrastructure",
-      url: "https://paymonei.com",
-    },
-    {
       title: "Hugogen",
       description:
         "Technology company developing foundational intelligence ecosystems across agent-driven commerce, design, productivity, and chat LLMs.",
@@ -21,19 +13,20 @@ export const FeaturesSection: React.FC = () => {
       url: "https://hugogen.com",
     },
     {
-      title: "ZillionScale",
+      title: "Paymonei",
       description:
-        "Sky network infrastructure for machine-to-machine operations and intelligence workloads architecture for autonomous systems.",
-      icon: Server,
-      badge: "Networks",
-      url: "https://zillionscale.com",
+        "Enterprise API infrastructure specializing in automated invoicing, bill payments, and seamless transaction connectivity for autonomous systems.",
+      icon: CreditCard,
+      badge: "Infrastructure",
+      statusBadge: "Coming Soon",
+      url: "https://paymonei.com",
     },
   ];
 
   return (
     <section id="features" className="py-32 md:py-48 relative overflow-hidden bg-zinc-50">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 w-full">
-        <div className="max-w-4xl mb-24">
+        <div className="max-w-4xl mx-auto mb-24 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 tracking-tight text-zinc-900">
             Portfolio Companies
           </h2>
@@ -42,7 +35,7 @@ export const FeaturesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {features.map((feature, index) => (
             <div
               key={index}
