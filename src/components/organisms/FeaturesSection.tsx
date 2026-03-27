@@ -7,7 +7,7 @@ export const FeaturesSection: React.FC = () => {
     {
       title: "Hugogen",
       description:
-        "Technology company developing foundational intelligence ecosystems across agent-driven commerce, design, productivity, and chat LLMs.",
+        "Technology company developing foundational intelligence ecosystems across agent-driven commerce, design, productivity, and LLMs.",
       icon: Brain,
       badge: "Intelligence",
       url: "https://hugogen.com",
