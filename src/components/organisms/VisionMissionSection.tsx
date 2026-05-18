@@ -2,7 +2,7 @@ import React from 'react';
 
 export const VisionMissionSection: React.FC = () => {
   return (
-    <section className="py-32 bg-zinc-50 text-zinc-900">
+    <section className="py-32 text-zinc-900">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid md:grid-cols-2 gap-20">
           <div>

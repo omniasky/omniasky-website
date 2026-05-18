@@ -5,6 +5,7 @@ import { VisionMissionSection } from '@/components/organisms/VisionMissionSectio
 import { MissionSection } from '@/components/organisms/MissionSection'
 import { CTASection } from '@/components/organisms/CTASection'
 import { Footer } from '@/components/organisms/Footer'
+import { TronBackground } from '@/components/molecules/TronBackground'
 
 export default function Home() {
   return (
@@ -12,9 +13,14 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <VisionMissionSection />
-        <FeaturesSection />
-        <MissionSection />
+        <div className="relative">
+          <TronBackground />
+          <div className="relative z-10">
+            <VisionMissionSection />
+            <FeaturesSection />
+            <MissionSection />
+          </div>
+        </div>
         <CTASection />
       </main>
       <Footer />
