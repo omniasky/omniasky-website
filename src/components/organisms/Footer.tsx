@@ -42,7 +42,6 @@ export const Footer: React.FC = () => {
 
         <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs font-light text-zinc-500">
           <p>© {new Date().getFullYear()} OmniaSky Technology Pte Ltd</p>
-          <p>Singapore</p>
         </div>
       </div>
     </footer>
