@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <FeaturesSection />
         <VisionMissionSection />
+        <FeaturesSection />
         <MissionSection />
         <CTASection />
       </main>
