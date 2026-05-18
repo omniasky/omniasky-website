@@ -89,13 +89,6 @@ export const MissionSection: React.FC = () => {
               to be built.
             </p>
 
-            <p className="font-normal text-zinc-900 border-l border-zinc-300 pl-6 py-2">
-              OmniaSky is a small team. The companies in the group are built
-              and operated by the same engineers and researchers, sharing
-              infrastructure, tooling, and technical direction rather than
-              running as separate organizations.
-            </p>
-
             <p>
               We are not optimizing for the current cycle. The aim is to build
               pieces that remain useful once intelligence becomes ordinary, the
