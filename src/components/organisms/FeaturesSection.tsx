@@ -28,7 +28,7 @@ export const FeaturesSection: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 w-full">
         <div className="max-w-4xl mx-auto mb-24 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 tracking-tight text-zinc-900">
-            Portfolio Companies
+            Companies
           </h2>
           <p className="text-xl md:text-2xl text-zinc-500 font-light leading-relaxed">
             Independent entities operating at the forefront of their respective domains, united by deep technical research and long-term vision.

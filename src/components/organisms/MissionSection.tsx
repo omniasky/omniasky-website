@@ -78,45 +78,41 @@ export const MissionSection: React.FC = () => {
 
           <div className="space-y-8 text-lg md:text-xl text-zinc-600 font-light leading-relaxed">
             <p>
-              We believe the future belongs to those who build infrastructure
-              before it&apos;s needed. While others optimize for today, we architect
-              systems for tomorrow—creating the foundational layers that enable
-              the next generation of autonomous operations.
+              OmniaSky is a technology group with one long-term goal: build the
+              infrastructure that general intelligence will depend on.
             </p>
 
             <p>
-              OmniaSky operates at the intersection of intelligence, networks,
-              and distributed systems. Our portfolio companies aren&apos;t just
-              building products—they&apos;re establishing protocols. Transaction
-              rails for intelligence living. Neural architectures for specialized tasks.
-              Compute infrastructure that scales beyond human-operated limits.
+              General intelligence is not a single model or product. It is a
+              full stack of capabilities: compute, data, and the software
+              systems that tie them together. Most of that stack still needs
+              to be built.
             </p>
 
             <p className="font-normal text-zinc-900 border-l border-zinc-300 pl-6 py-2">
-              Each company operates independently, led by visionaries who
-              understand their domains deeply. Grounded in rigorous technology research,
-              we provide capital, strategy, and the freedom to pursue ambitious
-              technical challenges that traditional structures would reject as impractical.
+              OmniaSky is a small team. The companies in the group are built
+              and operated by the same engineers and researchers, sharing
+              infrastructure, tooling, and technical direction rather than
+              running as separate organizations.
             </p>
 
             <p>
-              The systems we&apos;re building today will underpin economies we can
-              barely imagine. Machine-to-machine commerce at global scale.
-              Intelligence that augments human capability across every domain.
-              Infrastructure so reliable it becomes invisible.
+              We are not optimizing for the current cycle. The aim is to build
+              pieces that remain useful once intelligence becomes ordinary, the
+              way electricity and bandwidth eventually did.
             </p>
 
             <p>
-              This is our commitment: to back the ambitious, fund the
-              improbable, and build the fundamental infrastructure that makes
-              the future possible. Not incremental improvements to yesterday&apos;s
-              solutions, but foundational systems for tomorrow&apos;s challenges.
+              Some of this work will take a decade or more. We are comfortable
+              with that. The companies we back and the systems we build are
+              designed to compound over long periods, not to win the next
+              quarter.
             </p>
 
             <div className="pt-8 mt-12 border-t border-zinc-200">
               <p className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 drop-shadow-sm">
-                We&apos;re building infrastructure for a world where intelligence,
-                transactions, and computation happen at machine speed.
+                Our long-term goal is simple. Build the infrastructure that
+                general intelligence will run on.
               </p>
             </div>
           </div>

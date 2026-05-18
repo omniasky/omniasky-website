@@ -33,15 +33,8 @@ export const HeroSection: React.FC = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-zinc-600 mb-12 max-w-2xl font-light tracking-wide animate-slide-up text-balance leading-relaxed">
-            Architecting the foundational layers of computation, transaction infrastructure, and artificial intelligence for global autonomous operations.
+            Building the systems that general intelligence will depend on.
           </p>
-
-          <div className="flex flex-col sm:flex-row items-baseline space-y-4 sm:space-y-0 sm:space-x-12 pt-12 border-t border-zinc-200 animate-slide-up">
-            <div className="flex flex-col">
-              <span className="text-4xl font-bold text-zinc-900 tracking-tight">03</span>
-              <span className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mt-2">Core Sectors</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
