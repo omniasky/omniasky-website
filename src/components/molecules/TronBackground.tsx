@@ -3,25 +3,25 @@ import React from "react";
 const TRAILS = [
   {
     id: "trail-0",
-    d: "M 400 -50 V 400 a 25 25 0 0 1 -25 25 H 100 a 25 25 0 0 1 -25 -25 V -50",
+    d: "M 200 -50 V 600 a 25 25 0 0 0 25 25 H 500 a 25 25 0 0 1 25 25 V 2450",
     duration: "12s",
     delay: "0s",
   },
   {
     id: "trail-1",
-    d: "M -50 600 H 900 a 25 25 0 0 1 25 25 V 1500 a 25 25 0 0 0 25 25 H 1490",
+    d: "M 1200 -50 V 800 a 25 25 0 0 1 -25 25 H 850 a 25 25 0 0 0 -25 25 V 2450",
     duration: "13s",
     delay: "3s",
   },
   {
     id: "trail-2",
-    d: "M 1200 2450 V 1800 a 25 25 0 0 0 -25 -25 H 300 a 25 25 0 0 1 -25 -25 V -50",
+    d: "M -50 1400 H 300 a 25 25 0 0 1 25 25 V 1800 a 25 25 0 0 1 -25 25 H -50",
     duration: "14s",
     delay: "6s",
   },
   {
     id: "trail-3",
-    d: "M 1490 200 H 700 a 25 25 0 0 0 -25 25 V 2450",
+    d: "M 1490 1500 H 1100 a 25 25 0 0 0 -25 25 V 2450",
     duration: "11s",
     delay: "9s",
   },
@@ -62,8 +62,8 @@ export const TronBackground: React.FC = () => {
                 id={t.id}
                 d={t.d}
                 pathLength={1}
-                strokeDasharray={1}
-                strokeDashoffset={1}
+                strokeDasharray="0.15 1"
+                strokeDashoffset={-0.15}
                 style={{
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
                 }}
