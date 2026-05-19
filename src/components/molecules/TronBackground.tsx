@@ -44,14 +44,9 @@ export const TronBackground: React.FC = () => {
         viewBox="0 0 1440 2400"
         preserveAspectRatio="xMidYMid slice"
         className="absolute inset-0 w-full h-full"
-        style={{
-          filter:
-            "drop-shadow(0 0 3px rgba(255,22,22,0.7)) drop-shadow(0 0 6px rgba(255,22,22,0.35))",
-        }}
       >
         <g
           stroke="#ff1616"
-          strokeWidth="2"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -59,20 +54,32 @@ export const TronBackground: React.FC = () => {
           {TRAILS.map((t) => (
             <g key={t.id}>
               <path
+                d={t.d}
+                pathLength={1}
+                strokeDasharray={1}
+                strokeDashoffset={1}
+                strokeWidth="5"
+                strokeOpacity="0.1"
+                style={{
+                  animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
+                }}
+              />
+              <path
                 id={t.id}
                 d={t.d}
-                pathLength={100}
-                strokeDasharray="100 100"
-                strokeDashoffset={-100}
+                pathLength={1}
+                strokeDasharray={1}
+                strokeDashoffset={1}
+                strokeWidth="1.5"
+                strokeOpacity="0.75"
                 style={{
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
                 }}
               />
               <g
                 style={{
-                  offsetPath: `url(#${t.id})`,
-                  offsetRotate: "auto",
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
+                  willChange: "transform, opacity",
                 }}
               >
                 <g stroke="none">
@@ -84,6 +91,17 @@ export const TronBackground: React.FC = () => {
                   <rect x="-14" y="-5" width="3" height="10" fill="#7a0000" />
                   <circle cx="0" cy="0" r="2.5" fill="#fff5f5" />
                 </g>
+                <animateMotion
+                  dur={t.duration}
+                  begin={t.delay}
+                  repeatCount="indefinite"
+                  rotate="auto"
+                  keyTimes="0;0.45;1"
+                  keyPoints="0;1;1"
+                  calcMode="linear"
+                >
+                  <mpath xlinkHref={`#${t.id}`} />
+                </animateMotion>
               </g>
             </g>
           ))}
