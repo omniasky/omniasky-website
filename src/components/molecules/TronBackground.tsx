@@ -62,8 +62,8 @@ export const TronBackground: React.FC = () => {
                 id={t.id}
                 d={t.d}
                 pathLength={100}
-                strokeDasharray="15 100"
-                strokeDashoffset={-15}
+                strokeDasharray="100 100"
+                strokeDashoffset={-100}
                 style={{
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
                 }}

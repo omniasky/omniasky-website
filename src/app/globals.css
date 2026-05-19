@@ -90,7 +90,7 @@
 
 @keyframes draw-trail {
   0% {
-    stroke-dashoffset: -15;
+    stroke-dashoffset: -100;
     offset-distance: 0%;
     opacity: 0;
   }
@@ -98,17 +98,17 @@
     opacity: 1;
   }
   45% {
-    stroke-dashoffset: 85;
+    stroke-dashoffset: 0;
     offset-distance: 100%;
     opacity: 1;
   }
   55% {
-    stroke-dashoffset: 85;
+    stroke-dashoffset: 0;
     offset-distance: 100%;
     opacity: 0;
   }
   100% {
-    stroke-dashoffset: 85;
+    stroke-dashoffset: 0;
     offset-distance: 100%;
     opacity: 0;
   }
