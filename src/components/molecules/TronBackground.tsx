@@ -61,15 +61,17 @@ export const TronBackground: React.FC = () => {
               <path
                 id={t.id}
                 d={t.d}
-                pathLength={1}
-                strokeDasharray="0.15 1"
-                strokeDashoffset={-0.15}
+                pathLength={100}
+                strokeDasharray="15 100"
+                strokeDashoffset={-15}
                 style={{
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
                 }}
               />
               <g
                 style={{
+                  offsetPath: `url(#${t.id})`,
+                  offsetRotate: "auto",
                   animation: `draw-trail ${t.duration} linear ${t.delay} infinite`,
                 }}
               >
@@ -82,17 +84,6 @@ export const TronBackground: React.FC = () => {
                   <rect x="-14" y="-5" width="3" height="10" fill="#7a0000" />
                   <circle cx="0" cy="0" r="2.5" fill="#fff5f5" />
                 </g>
-                <animateMotion
-                  dur={t.duration}
-                  begin={t.delay}
-                  repeatCount="indefinite"
-                  rotate="auto"
-                  keyTimes="0;0.45;1"
-                  keyPoints="0;1;1"
-                  calcMode="linear"
-                >
-                  <mpath xlinkHref={`#${t.id}`} />
-                </animateMotion>
               </g>
             </g>
           ))}
